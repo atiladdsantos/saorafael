@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::prefix('estado')->group(function () {
     //Route::post('/', 'API\UserController@incluir');
-    //Route::put('/', 'API\UserController@atualizar');
+    //Route::put('/', 'API\UserController@atualizar');//teste
     Route::get('obterPorTodos', 'EstadoController@obterPorTodos');
     Route::get('obterPorId/{pk}', 'EstadoController@obterPorId');
 });
